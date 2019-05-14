@@ -1,0 +1,9 @@
+{
+  "name": "vue-insomnia",
+  "version": "0.1.0",
+  "description": "A vue plugin that prevents display sleep.",
+  "main": "index.js",
+  "repository": "https://github.com/gorbypark/vue-insomnia.git",
+  "author": "Mike Hamilton <mike@mikehamilton.ca>",
+  "license": "MIT"
+}
