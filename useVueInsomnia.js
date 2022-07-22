@@ -1,20 +1,13 @@
-import { reactive, readonly } from 'vue';
-import { generatePlayer }     from './insomnia';
+import { ref }            from 'vue';
+import { generatePlayer } from './insomnia';
 
-const state = reactive({
-	insomnia: generatePlayer()
-});
-
-const getters = {
-};
+const insomnia = ref(generatePlayer());
 
 const actions = {
-	enableVueInsomnia: () => state.insomnia.play(),
-	disableVueInsomnia: () => state.insomnia.pause(),
+	enableVueInsomnia: () => insomnia.play(),
+	disableVueInsomnia: () => insomnia.pause(),
 }
 
 export const useVueInsomnia = () => ({
-	state: readonly(state),
-	...getters,
 	...actions
 });

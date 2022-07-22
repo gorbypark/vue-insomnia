@@ -22,7 +22,5 @@ export const generatePlayer = () => {
 	);
 	document.getElementById("vue-insomnia").appendChild(vueInsomniaSource);
 	
-	console.log( vueInsomnia );
-	
 	return vueInsomnia;
 }
