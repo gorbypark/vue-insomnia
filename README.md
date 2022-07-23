@@ -8,6 +8,25 @@ Import into your project using npm or yarn.
 
 `yarn add vue-insomnia` or `npm install --save vue-insomnia`
 
+
+
+## Vue 3.x
+
+### Usage
+
+````vue
+<template>
+    <button @click="enableVueInsomnia">Wake Lock on</button>
+    <button @click="disableVueInsomnia">Wake Lock off</button>
+</template>
+
+<script setup>
+  const { enableVueInsomnia, disableVueInsomnia } = useVueInsomnia();
+</script>
+````
+
+## Vue 2.x
+
 In your main.js (or equivalent) import and then use vue-insomnia.
 
 ```
@@ -16,7 +35,7 @@ import vueInsomnia from "vue-insomnia";
 Vue.use(vueInsomnia);
 ```
 
-## Usage
+### Usage
 
 There are two methods globally available, vueInsomnia().on() and vueInsomnia().off(), to toggle screen wake lock on and off, respectively. For example, to turn on the wake lock when a component is loaded:
 
